@@ -6,14 +6,127 @@
 /* Feel free to add as many of these imports as you need */
 
 body {
-  color: var(--color-primary);
-  background-color: var(--color-secondary);
+  background-color: black;
+  color: white;
+  margin: 0;
+  padding: 0;
+  font-family: inter; 
 }
 
-.centered {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  justify-content: center;
+.container-intro {
+  margin-left: 150px;
+  margin-right: 150px;
+  margin-top: 10px;
+  margin-bottom: 10px;
   text-align: center;
+}
+
+.header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  border-bottom: solid;
+  border-width: 0.1px;
+  border-color: white;
+  margin-left: 150px;
+  margin-right: 150px;
+}
+
+.logo {
+  height: 55px;
+  width: 75px;
+  margin-left: 10px;
+}
+
+.nav{
+  font-family: inter;
+}
+
+.nav ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  display: inline-block;
+}
+
+.nav li{
+  margin-right: 20px;
+  display: inline-block;
+}
+
+.nav a {
+  text-decoration: none;
+  color: white;
+}
+
+.search-bar {
+  font-size: 12px;
+  padding-left: 15px;
+  padding-right: 150px;
+  padding-top: 5.5px;
+  padding-bottom: 5.5px;
+  border-radius: 20px;
+  color: black;
+  background-color: white;
+  text-align: center;
+  border: none;
+  outline: none;
+  display: inline-block;
+}
+
+.search-bar:active{
+    border: none;
+}
+
+.search-bar input[type=text] {
+  border: none;
+}
+
+.search-bar input[type=text] :hover {
+  border-color: blue;
+}
+
+.user-section{
+  display: flex;
+}
+
+.login, .shopping-cart{
+  margin-left: 20px;
+}
+
+.login{
+  margin-right: 10px;
+}
+
+.shopping-cart{
+  margin-right: 10px;
+}
+
+.blackfriday {
+  margin-top: 45px;
+  text-align: center;
+  color: #ffffff;
+  text-shadow:
+    0 0 1px #fff,
+    0 0 4px #fff,
+    0 0 19px #fff,
+    0 0 40px rgb(255, 0, 247),
+    0 0 75px rgb(255, 0, 247),
+    0 0 82px rgb(255, 0, 247),
+    0 0 95px rgb(255, 0, 247),
+    0 0 100px rgb(255, 0, 247);
+}
+
+.intro{
+  width: 600px;
+  text-align: center;
+  margin-top: 50px;
+  margin: auto;
+  font-weight:300;
+  font-style: italic;
+
 }
