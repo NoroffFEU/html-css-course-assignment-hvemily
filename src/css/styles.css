@@ -26,6 +26,7 @@ body {
     margin-top: 30px;
     margin-left: 150px;
     margin-right: 150px;
+    margin-bottom: 50px;
     justify-content: space-between;
   }
   
@@ -68,6 +69,7 @@ body {
     background-color: white;
     border: none;
     margin-top: 10px;
+    margin-bottom: 20px;
   }
   
   .search-bar input[type=text] {
