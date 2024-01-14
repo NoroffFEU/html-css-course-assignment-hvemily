@@ -8,12 +8,23 @@
 body {
   background-color: black;
   color: white;
-  font-family: inter; 
+  font-family: inter;   
 }
 
 main{
-  
 }
+
+/*main page*/
+
+.header-logo, .nav-header, .logincart{
+  display: none;
+}
+
+.page-header h1{
+  font-size: 1.5rem;
+  margin-left: 8%;
+}
+
 
 .nav-grid {
   display: flex;
@@ -27,11 +38,11 @@ main{
 }
 
 .logo{
-  width: 15%;
+  width: 6rem;
 }
 
 .burger{
-  width: 5%;
+  width: 2rem;
 }
 
 .blackfriday{
@@ -144,6 +155,7 @@ main{
 
 .new-row{
   width: 100%;
+  max-width: 200px;
   height: 2rem;
   align-items: center;
   display: flex;
@@ -156,6 +168,9 @@ main{
 .member-new{
   color: red;
   margin-top: 0px;
+  width: 100%;
+  max-width: 200px;
+  font-size: 14px;
 }
 
 .trending-header{
@@ -218,6 +233,8 @@ footer{
   width: 100%;
   display: flex;
   justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 .footer-logo{
@@ -225,9 +242,11 @@ footer{
   height: auto;
   margin-top: 5%;
   margin-bottom: 10%;
+  align-items: center;
+  justify-content: center;
 }
 
-/*about*/
+/*about page*/
 
 .grayline-about{
   margin-top: 7%;
@@ -240,26 +259,16 @@ footer{
 .backbutton{
   margin-top: 25px;
   width: 1.2rem;
-}
-
-.aboutus h1{
-  font-size: 1.5rem;
+  margin-left: 8%;
 }
 
 .gamehub-about{
   font-size: large;
   text-align: center;
-  color: white;
+  color: rgb(117, 117, 117);
   line-height: 2rem;
 }
 
-.grayline-about-footer{
-  margin-top: 7%;
-  border: none;
-  border-top: 1px solid;
-  width: 70%;
-  border-color: rgb(172, 172, 172);
-}
 
 .about-image{
   display: inline-block;
@@ -269,21 +278,43 @@ footer{
 }
 
 .about-text{
-  text-align:left;
+  text-align: center;
   margin-left: 20px;
   font-size: 14px;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
   margin-bottom: 3rem;
   margin-top: 2.5rem;
 }
 
 
-/*contact*/
+/*contact page*/
 
-.gamehub-contact{
-  text-align: center;
+.backbutton{
+  margin-top: 25px;
+  width: 1.2rem;
+  margin-left: 8%;
 }
 
+.page-header h1{
+  font-size: 1.5rem;
+  margin-left: 8%;
+}
+
+
+.gamehub-contact{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: medium;
+  margin-bottom: 2rem;
+}
+
+.faq-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
 .faq-box{
   display: flex;
@@ -292,9 +323,10 @@ footer{
   padding: 10px;
   border: 2px solid;
   border-radius: 20px;
-  width: auto;
   background-color: white;
   color: black;
+  width: 100%;
+  max-width: 15rem;
 }
 
 .down-arrow{
@@ -310,10 +342,16 @@ footer{
   font-weight: bold;
 }
 
-.moreq{
-  margin-top: 25px;
+.more-faq{
+  margin-top: 10px;
   font-size: 1rem;
   text-align: center;
+}
+
+.message-form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ::placeholder {
@@ -321,35 +359,34 @@ footer{
 }
 
 .email{
-  margin-top: 1rem;
   margin-bottom: 1rem;
   height: 2.3rem;
-  width: 16.5rem;
-
+  width: 100%;
+  max-width: 15rem;
+  font-family: inherit;
+  font-size: 12px;
 }
 
 .message-wrapper {
   height: 10rem;
-  width: 16.5rem;
+  width: 100%;
+  max-width: 15rem;
   position: relative;
+ 
 }
 
 .message {
   width: 100%; 
   height: 100%;
-  padding: 5px;
   resize: none;         
   font-family: inherit;  
-  font-size: inherit;    
+  font-size: 12px;    
   color: inherit; 
 }
 
 .message::placeholder { 
   color: black;
   opacity: 1;
-  /*want to make this black.
-  it's a default gray but i'd
-  like to make it clearer.*/ 
 }
 
 .send {
@@ -379,15 +416,306 @@ footer{
 }
 
 .phone-icon{
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 100%;
+  max-width: 2rem;
+
+}
+
+.mail-icon{
+  width: 100%;
+  max-width: 2rem;
+}
+
+.location{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.map{
+  width: 100%;
+  max-width: 15rem;
+}
+
+/*payment page*/
+
+.input-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
+.first-name, .last-name, .adress, .city, .state, .zip, .email-adress{
+  width: 100%;
+  max-width: 15rem;
+  height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.login{
+  padding: 2%;
+  background-color: rgb(69, 69, 69);
+  color: white;
+  font-size: 16px;
+  margin-bottom: 2rem;
+}
+
+.boxer-game{
+  width: 100%;
+  max-width: 10rem;
+}
+
+.order-title, .original-price, .new-price, .qty, .product-code{
+  margin: 5px 0;
+}
+
+.order-summary{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.original-price{
+  text-decoration: line-through;
+}
+
+.new-price{
+  color: red;
+  font-size: 20px;
+}
+
+.qty{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.payment{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  gap: 1rem;
+  background-color: rgb(51, 51, 51);
+  width: 100%;
+  max-width: 13rem;
+}
+
+h4 {
+  margin-bottom: 0;
+}
+
+.cards{
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+}
+
+.visa, .apple-pay, .mc, .paypal{
+  width: 100%;
+  max-width: 20px;
+}
+
+
+.cvc{
+  max-width: 3rem;
+}
+
+.pay{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1rem;
+
+  width: 5rem;
+
+  background-color: rgb(48, 48, 48);
+  color: white;
+  
+}
+
+.additional{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.bought-games{
+  width: 100%;
+  max-width: 7rem;
+}
+
+.more-games-payment{
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.more-plus-payment{
+  width: 100%;
+  max-width: 40px;
+  margin-top: 2rem;
+}
+
+/*success page*/
+
+.success-icon{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  width: 100%;
+  max-width: 5rem;
+  margin-bottom: 2.5rem;
+}
+
+.success-container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.number{
+  font-weight: bold;
+}
+
+.underline{
+  text-decoration:underline;
+}
+
+
+/* games page */
+
+.all-games{
+  display: flex;
+  flex-direction: column;
+}
+
+/*have used game-display html from index site*/
+
+/*item page*/
+
+.boxer-featured{
+  width: 100%;
+  max-width: 20rem;
+}
+
+.product-container{
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.game-description{
+  width: 100%;
+  max-width: 20rem;
+  line-height: 2rem;
+}
+
+.compability{
+  font-size: 14px;
+  font-style: italic;
+}
+
+.membership-discount{
+  color: red;
+  margin-bottom: 3rem;
+}
+
+.boxer-price{
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.add, .wishlist{
+  width: 100%;
+  max-width: 25rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+
+  background-color: #000000;
+  color: white;
+  border: solid 1px;
+  border-radius: 25px;
+}
+
+.others-bought{
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.extra-games{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: auto;
+
+}
+
+.construction{
+  margin-left: 8%;
 }
 
 @media only screen and (min-width: 768px) {
+
+
+  .nav-grid, .logo, .burger{
+    display: none;
+  }
  
-  .phone-icon{
-    width: 2.5rem;
-    height: 2.5rem;
+  .top-header{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+  }
+  
+  .logo{
+    width: 100%;
+    max-width: 10%;
+    margin: 0;
+    
+  }
+  
+  .logo-image{
+    width: 100%;
+    max-width: 45px;
+  }
+  
+  ul{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    margin: auto;
+    margin-top: 5%;
+    text-align: center;
+  }
+  
+  .nav-header{
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  .logincart{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
   }
 
 
