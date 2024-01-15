@@ -11,12 +11,13 @@ body {
   font-family: inter;   
 }
 
-main{
-}
-
 /*main page*/
 
-.header-logo, .nav-header, .logincart{
+.desktop-header, .search-container, .gray-line-desktop{
+  display: none;
+}
+
+.footer-desktop{
   display: none;
 }
 
@@ -225,7 +226,8 @@ main{
 }
 
 .more-plus{
-  width: 10%;
+  width: 100%;
+  max-width: 10%;
   margin-top: 10%;
 }
 
@@ -668,18 +670,30 @@ h4 {
   margin-left: 8%;
 }
 
-@media only screen and (min-width: 768px) {
 
+@media only screen and (min-width: 846px) {
+
+/*main page*/
 
   .nav-grid, .logo, .burger{
     display: none;
   }
  
-  .top-header{
+  .header{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding-top: 25px;
+  }
+
+  .desktop-header{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
+    text-align: center;
+    padding-top: 25px;
     
   }
   
@@ -690,9 +704,9 @@ h4 {
     
   }
   
-  .logo-image{
+  .desktop-logo{
     width: 100%;
-    max-width: 45px;
+    max-width: 70px;
   }
   
   ul{
@@ -718,5 +732,166 @@ h4 {
     gap: 10px;
   }
 
+  .search-container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+  }
   
+  .searchbox{
+   padding: 5px;
+   border: solid;
+   border-radius: 25px; 
+  }
+  
+  .desktop-line{
+
  }
+
+
+ .blackfriday{
+  font-size: 40px;
+ }
+
+ .top-gray-line{
+  width: 85%;
+  background-color: rgb(255, 130, 228);
+  height: 1px;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  
+}
+
+.pitch{
+  font-style: italic;
+  font-size: 25px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.browse{
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.whatsnew{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.releases{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+
+  font-weight: 200;
+}
+
+.new-releases{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+}
+
+.new-game-image{
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+.new-row{
+  width: 100%;
+  max-width: 400px;
+  height: 2rem;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 0px;
+  font-weight: bold;
+}
+
+.member-new{
+  color: red;
+  margin-top: 0px;
+  width: 100%;
+  max-width: 400px;
+  font-size: 14px;
+}
+
+.trending-main{
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+}
+
+.more-plus{
+  width: 100%;
+  max-width: 45px;
+  margin-top: 15px;
+}
+
+.horizontal-line{
+  width: 100%;
+  max-width: 1px;
+  height: 200px;
+  background-color: gray;
+}
+
+.footer-logo{
+  display: none;
+}
+
+.footer{
+  width: 100%;
+  font-family: inter;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.footer-desktop{
+  width: 100%;
+  font-family: inter;
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.h-six{
+  margin: 0;
+}
+
+
+.logo, .insta, .face, .twitter{
+  width: 100%;
+  max-width: 30px;
+}
+
+
+.logo-footer{
+  width: 100%;
+  max-width: 30px;
+}
+
+.support{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.about-footer{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
