@@ -29,6 +29,8 @@ a {
 .page-header h1{
   font-size: 1.5rem;
   margin-left: 8%;
+  display: flex;
+  flex-direction: column;
 }
 
 .nav-grid {
@@ -378,6 +380,7 @@ h6{
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 25px;
 }
 
 ::placeholder {
@@ -527,7 +530,7 @@ h6{
   align-items: center;
   margin: auto;
   gap: 1rem;
-  background-color: rgb(51, 51, 51);
+  background-color: rgb(21, 21, 21);
   width: 100%;
   max-width: 13rem;
 }
@@ -632,27 +635,32 @@ h4 {
 
 .boxer-featured{
   width: 100%;
-  max-width: 20rem;
+  max-width: 300px;
 }
 
 .product-container{
-  width: fit-content;
+  width: 350px;
+  max-width: 350px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  text-align: center;
+  text-align: start;
+  margin: 0 auto;
 }
 
 .game-description{
   width: 100%;
-  max-width: 20rem;
-  line-height: 2rem;
+  max-width: 300px;
+  line-height: 1.2rem;
+  align-items: center;
+  justify-content: center;
 }
 
 .compability{
   font-size: 14px;
   font-style: italic;
+  max-width: 300px;
 }
 
 .membership-discount{
@@ -666,8 +674,10 @@ h4 {
 }
 
 .add, .wishlist{
+  display: flex;
+  flex-direction: column;
   width: 100%;
-  max-width: 25rem;
+  max-width: 150px;
   margin-bottom: 1rem;
   padding: 0.5rem;
 
@@ -675,6 +685,13 @@ h4 {
   color: white;
   border: solid 1px;
   border-radius: 25px;
+  margin: 0 auto;
+  align-items: center;
+  gap: 10px;
+}
+
+button.add{
+  margin-bottom: 15px;
 }
 
 .others-bought{
@@ -766,10 +783,11 @@ h4 {
 
   .searchbox{
    color: rgb(0, 0, 0);
-   padding: 9px 4px 9px 40px;
+   padding: 5px 5px 7px 7px;
    border-radius: 25px; 
-   background: white url(/assets/magnifying-glass-solid\ \(1\).svg) no-repeat 13px;
+   background: white;
   }
+
   
  .blackfriday{
   margin-top: 35px;
@@ -805,6 +823,10 @@ h4 {
 .browse{
   display: inline-block;
   margin-right: 10px;
+}
+
+.browse, .sell:hover{
+  cursor: pointer;
 }
 
 .whatsnew{
@@ -953,18 +975,17 @@ h4 {
   width: 100%;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 10px;
 }
 
 .game-image{
   width: 100%;
-  max-width: max-content;
+  max-width: 260px;
   height: auto;
 }
 
 .card-info{
   width: 100%;
-  max-width: 330px;
+  max-width: 260px;
 }
 
 .original-p{
@@ -1011,4 +1032,212 @@ h4 {
   justify-content: space-around;
   gap: 10px;
   align-items: flex-start;
+}
+
+
+/*contact page*/
+
+.contact-left{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: start;
+  align-items: flex-start;
+  max-width: 400px;
+  text-align: start;
+}
+
+.faq-container, .message-form{
+  width: 100%;
+  margin-left: 0 auto;
+  align-items: flex-start;
+}
+
+.faq-container{
+  justify-content: flex-start;
+  width: 250px;
+}
+
+.gamehub-contact{
+  text-align: start;
+}
+
+.contact-right{
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-full{
+  width: 80%;
+  display: flex;
+  flex-direction: row;
+  justify-content:space-around;
+  margin-bottom: 80px;
+}
+
+h3 {
+  margin-top: 10px;
+}
+
+.map{
+  border-radius: 25px;
+}
+
+.adress{
+  margin-bottom: 0px;
+}
+
+.phone{
+  margin-top: 10px;
+  gap: 10px;
+  justify-content: flex-start;
+}
+
+.phone-icon, .mail-icon{
+  width: 100%;
+  max-width: 18px;
+}
+
+/*item page*/ 
+
+.item-container{
+    width: 100%;
+    max-width: 1200px;
+    height: fit-content;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .product-container{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: auto;
+    gap: 30px;
+  }
+
+  .product-buttons{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+  button.add{
+    margin-bottom: 0px;
+  }
+
+  .extra-games{
+    border-left: 1px solid gray;
+    padding-left: 50px;
+    margin: 0px;
+  }
+
+  .responsive-title h1{
+    margin-left: 0px;
+  }
+
+  .product-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80%;
+  }
+
+  .boxer-price{
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 0px;
+  }
+
+  .membership-discount {
+    color: red;
+    margin-bottom: 1rem;
+}
+
+.footer-product-page{
+  margin-top: 6rem;
+}
+
+.searchbox{
+  width: 330px;
+  color: rgb(0, 0, 0);
+  padding: 10px;
+  border-radius: 25px; 
+  background: white;
+
+ }
+
+ .search-container{
+  width: 330px;
+  height: fit-content;
+  margin: auto;
+  position: relative;
+ }
+
+ .magni{
+  position: absolute;
+  right: 15px;
+  top: 10px;
+ }
+
+ /*payment page*/
+
+.checkout-main{
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+.input-wrapper{
+  width: 100%;
+  max-width: 500px;
+  border-right: 1px solid gray;
+  margin-left: 50px;
+  padding-right: 80px;
+  height: fit-content;
+}
+
+.full-payment{
+  width: 100%;
+  max-width: 500px;
+  margin-left: 150px;
+}
+
+.additional{
+  width: 100%;
+  max-width: 500px;
+  border-left: 1px solid gray;
+  margin-left: 150px;
+  height: fit-content;
+}
+
+.order-summary{
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  margin-left: 30;
+  margin-top: 0px;
+  padding: 0px;
+}
+
+.summary-text{
+  display: flex;
+  flex-direction: column;
+}
+
+.payment{
+  width: 100%;
+  max-width: 500px;
+}
+
+.footer-payment{
+  margin-top: 50px;
 }
