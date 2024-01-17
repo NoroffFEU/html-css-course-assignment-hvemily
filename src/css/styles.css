@@ -923,7 +923,7 @@ button.add{
   font-family: inter;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-evenly;
   margin-bottom: 25px;
 }
 
