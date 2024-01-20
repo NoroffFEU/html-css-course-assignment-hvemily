@@ -153,7 +153,7 @@ a {
   padding-right: 18px;
   border: solid;
   border-radius: 25px;
-  border-width: 0.0001rem;
+  border-width: 1px;
 }
 
 .sell {
