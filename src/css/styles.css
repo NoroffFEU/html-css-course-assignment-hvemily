@@ -26,7 +26,11 @@ a {
   text-decoration: none;
 }
 
+/*construction page*/
 
+.space{
+  margin-bottom: 500px;
+}
 
 
 /*main page*/
@@ -1285,4 +1289,10 @@ h3 {
 
 .footer-payment{
   margin-top: 50px;
+}
+
+/*construction page*/
+
+.space{
+  margin-bottom: 500px;
 }
