@@ -26,23 +26,12 @@ a {
   text-decoration: none;
 }
 
-/*construction page*/
 
-.space{
-  margin-bottom: 500px;
-}
-
-
-/*main page*/
+/*header*/
 
 .desktop-header, .search-container, .gray-line-desktop{
   display: none;
 }
-
-.footer-desktop{
-  display: none;
-}
-
 .page-header h1{
   font-size: 1.5rem;
   margin-left: 8%;
@@ -97,6 +86,38 @@ a {
   margin-top: 30px;
   margin-bottom: 30px;
 }
+
+.footer-logo{
+  width: 100%;
+  max-width: 60px; 
+  margin-bottom: 20px;
+}
+
+/*footer*/
+
+footer{
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 14px;
+} 
+h6{
+  font-size: 15px;
+} 
+.logo-footer{
+  width: 100%;
+  max-width: 30px;
+  height: auto;
+}
+.footer-desktop{
+  display: none;
+}
+
+
+/*main page*/
 
 .top-pink-line{
   width: 85%;
@@ -285,32 +306,6 @@ a {
   margin-bottom: 100px;
 }
 
-.footer-logo{
- width: 100%;
- max-width: 60px; 
- margin-bottom: 20px;
-}
-
-footer{
-  width: 100%;
-  height: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-  font-size: 14px;
-}
-
-h6{
-  font-size: 15px;
-}
-
-
-.logo-footer{
-  width: 100%;
-  max-width: 30px;
-  height: auto;
-}
 
 /*about page*/
 
@@ -438,8 +433,7 @@ h6{
   height: 10rem;
   width: 100%;
   max-width: 15rem;
-  position: relative;
- 
+  position: relative; 
 }
 
 .message {
@@ -745,10 +739,15 @@ button.add{
 
 }
 
+/*construction page*/
+
+.space{
+  margin-bottom: 500px;
+}
+
 .construction{
   margin-left: 8%;
 }
-
 
 @media only screen and (min-width: 899px) {
 
