@@ -824,6 +824,10 @@ button.add{
   background: white;
   }
 
+  .hidden{
+    display: none;
+  }
+
 /*footer*/
 
 .footer-logo{
