@@ -749,12 +749,10 @@ button.add{
 
 @media only screen and (min-width: 899px) {
 
-/*main page*/
-
+/*header*/
   .nav-grid, .logo, .burger{
     display: none;
   }
- 
   .header{
     display: flex;
     flex-direction: row;
@@ -823,6 +821,95 @@ button.add{
   background: white;
   }
 
+/*footer*/
+
+.footer-logo{
+  display: none;
+}
+
+.footer{
+  width: 100%;
+  font-family: inter;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 25px;
+}
+
+.footer-desktop{
+  width: 100%;
+  font-family: inter;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+
+
+.h-six{
+  margin: 0;
+}
+
+
+.logo, .insta, .face, .twitter{
+  width: 100%;
+  max-width: 30px;
+}
+
+
+.logo-footer{
+  width: 100%;
+  max-width: 100px;
+}
+
+.support{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.about-footer{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.profile{
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+}
+
+.some{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.insta, .face, .twitter{
+  width: 100%;
+  max-width: 25px;
+  margin-top: 5px;
+}
+
+.visa, .paypal, .mastercard, .apple-pay{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  max-width: 25px;
+  height: 20px;
+}
+
+.payment-options{
+  display: flex;
+  flex-direction: row;
+  width: auto;
+  gap: 10px;
+  align-items: center;
+}
+
+/*main page*/
   
 .blackfriday{
   margin-top: 35px;
@@ -927,92 +1014,6 @@ button.add{
   max-width: 1px;
   height: 400px;
   background-color: gray;
-}
-
-.footer-logo{
-  display: none;
-}
-
-.footer{
-  width: 100%;
-  font-family: inter;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  margin-bottom: 25px;
-}
-
-.footer-desktop{
-  width: 100%;
-  font-family: inter;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-}
-
-
-
-.h-six{
-  margin: 0;
-}
-
-
-.logo, .insta, .face, .twitter{
-  width: 100%;
-  max-width: 30px;
-}
-
-
-.logo-footer{
-  width: 100%;
-  max-width: 100px;
-}
-
-.support{
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.about-footer{
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.profile{
-  display: flex;
-  flex-direction: column;
-  text-align: left;
-}
-
-.some{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  margin-top: 10px;
-}
-
-.insta, .face, .twitter{
-  width: 100%;
-  max-width: 25px;
-  margin-top: 5px;
-}
-
-.visa, .paypal, .mastercard, .apple-pay{
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  max-width: 25px;
-  height: 20px;
-}
-
-.payment-options{
-  display: flex;
-  flex-direction: row;
-  width: auto;
-  gap: 10px;
-  align-items: center;
 }
 
 /*games*/
