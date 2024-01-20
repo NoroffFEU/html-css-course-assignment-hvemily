@@ -26,6 +26,10 @@ a {
   text-decoration: none;
 }
 
+.hidden{
+  display: none;
+}
+
 
 /*header*/
 
@@ -824,9 +828,6 @@ button.add{
   background: white;
   }
 
-  .hidden{
-    display: none;
-  }
 
 /*footer*/
 
