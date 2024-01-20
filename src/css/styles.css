@@ -1260,12 +1260,14 @@ button.add{
   margin-left: 50px;
   padding-right: 80px;
   height: fit-content;
+  padding-bottom: 30px;
 }
 
 .full-payment{
   width: 100%;
   max-width: 500px;
   margin-left: 150px;
+  margin-bottom: 100px;
 }
 
 .additional{
