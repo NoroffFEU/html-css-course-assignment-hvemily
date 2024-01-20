@@ -1148,16 +1148,16 @@ h3 {
 /*item page*/ 
 
 .item-container{
-    width: 100%;
-    max-width: 1200px;
-    height: fit-content;
-    margin: auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-  }
+  width: 100%;
+  max-width: 1200px;
+  height: fit-content;
+  margin: auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
 
-  .product-container{
+.product-container{
     width: 100%;
     max-width: 1400px;
     display: flex;
@@ -1167,7 +1167,7 @@ h3 {
     gap: 30px;
   }
 
-  .product-buttons{
+.product-buttons{
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -1175,34 +1175,34 @@ h3 {
     gap: 10px;
   }
 
-  button.add{
+button.add{
     margin-bottom: 0px;
   }
 
-  .extra-games{
+.extra-games{
     border-left: 1px solid gray;
     padding-left: 50px;
     margin: 0px;
   }
 
-  .responsive-title h1{
+.responsive-title h1{
     margin-left: 0px;
   }
 
-  .product-text{
+.product-text{
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
     height: 80%;
   }
 
-  .boxer-price{
+.boxer-price{
     font-size: 2rem;
     font-weight: bold;
     margin: 0px;
   }
 
-  .membership-discount {
+.membership-discount {
     color: red;
     margin-bottom: 1rem;
 }
