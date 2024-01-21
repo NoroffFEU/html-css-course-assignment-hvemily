@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="payment page">
+  <title>Gamehub ⏐ Checkout</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+  <link rel="stylesheet" href="./src/css/styles.css">
+</head>
+
+  <body>
+    <header>
+      <nav class="nav-grid">
+        <a href="index.html"><img class="logo" src="./assets/images/icons/logo.png" alt="gamehub logo"></a>
+        <label for="hamburger-ham">
+        <img class="burger" src="./assets/images/icons/bars-solid.svg" alt="hamburger menu">
+        </label>
+            
+        <input id="hamburger-ham" name="hamburger-ham" type="checkbox">  
+          <div class="hidden-burger">
+            <div class="top-buttons">
+              <a href="games.html">SHOP</a>
+              <a href="construction.html">SELL</a>
+              <a href="about.html">ABOUT</a>
+              <a href="contact.html">CONTACT</a>
+            </div>
+              
+            <div class="bottom-buttons">
+              <a href="construction.html">LOGIN</a>
+              <a href="construction.html">MY PROFILE</a>
+            </div>
+          </div>
+      </nav>  
+    
+      <div class="desktop-header">
+        <div> 
+          <a href="index.html"><img src="./assets/images/icons/logo.png" class="desktop-logo" alt="desktop logo"></a>
+        </div>
+      
+      <nav class="nav-header">
+        <ul>
+          <li><a href="games.html">SHOP</a></li>
+          <li><a href="construction.html">SELL</a></li>
+          <li><a href="about.html">ABOUT</a></li>
+          <li><a href="contact.html">CONTACT</a></li>
+        </ul>
+      </nav>
+      
+        
+      <div class="logincart">
+        <p>
+          <a href="construction.html">
+            LOGIN
+          </a>
+        </p> 
+        <p>
+          <a href="construction.html">
+            CART (1)
+          </a>
+        </p>
+        </div>
+      </div>
+    
+    <div class="search-container">
+      <label for="searchbox" class="hidden">Search games..</label>
+      <input class="searchbox" placeholder="Search games..">
+      <img src="./assets/images/icons/magni.svg" alt="magnifying glass" class="magni"/>
+    </div>
+    
+    
+    </header>
+  
+  
+  <main>
+
+    <div class="header-gray-line"></div>
+    
+    <div class="backbutton">
+      <a href="index.html">
+        <img src="./assets/images/icons/angle-left-solid.svg" class="backbutton" alt="back button">
+      </a>
+    </div>
+  
+  <div class="page-header">
+    <h1>Checkout</h1>
+  </div>
+
+  <div class="checkout-main">
+
+  <div class="input-wrapper">
+
+    <input type="text" placeholder="First Name" class="first-name">
+    <label for="first name" class="hidden">First name</label>
+
+    <input type="text" placeholder="Last Name" class="last-name">
+    <label for="last name" class="hidden">Last name</label>
+  
+    <input type="text" placeholder="Adress" class="adress">
+    <label for="adress" class="hidden">Adress</label>
+
+    <input type="text" placeholder="City" class="city">
+    <label for="city" class="hidden">City</label>
+
+    <input type="text" placeholder="State" class="state">
+    <label for="state" class="hidden">State</label>
+
+    <input type="text" placeholder="Zip Code" class="zip">
+    <label for="zip code" class="hidden">Zip code</label>
+
+    <input type="text" placeholder="E-mail adress" class="email-adress">
+    <label for="e-mail address" class="hidden">E-mail address</label>
+
+  <button class="login">..or Log in.</button>
+  <label for="Login" class="hidden">Login</label>
+
+  </div>
+
+<div class="full-payment">
+  <h2 class="order-summary">Order Summary</h2>
+
+  <div class="order-summary">
+    <img src="./assets/images/games/boxer.jpg" class="boxer-game" alt="boxer game">
+  <div class="summary-text">
+  <p class="order-title">Boxer (2023)</p>
+  <p class="original-price">49$</p>
+  <p class="new-price">44.15$</p>
+  <p class="qty">QTY:
+    <select name="options">
+      <label for="options" class="hidden">Options</label>
+
+      <option value="one">1</option>
+      <label for="option one" class="hidden">One</label>
+
+      <option value="two">2</option>
+      <label for="option two" class="hidden">Two</label>
+
+      <option value="one">3</option>
+      <label for="option three" class="hidden">Three</label>
+    </select>
+</p>
+
+<p class="product-code">Product code: 100231-33</p>
+</div>
+</div>
+
+<div class="payment">
+  <h4>Payment method</h4>
+    <div class="payment-methods">
+      <div class="cards">
+      <img src="./assets/images/cards/cc-visa.svg" class="visa" alt="visa card">
+      <img src="./assets/images/cards/cc-apple-pay.svg" class="apple-pay" alt="apple pay card">
+      <img src="./assets/images/cards/cc-mastercard.svg" class="mc" alt="mastercard card">
+      <img src="./assets/images/cards/cc-paypal.svg" class="paypal" alt="paypal card">
+      </div>
+    </div>
+
+    <input type="text" placeholder="Card number">
+    <div class="exp-cvc">
+      <select name="cards">
+        <option value="first">Exp.date</option>
+        <label for="expiration date" class="hidden">Expiration date</label>
+
+        <option value="one">1/26</option>
+        <label for="opt. one" class="hidden">1/26</label>
+
+        <option value="two">1/27</option>
+        <label for="option two" class="hidden">1/27</label>
+
+        <option value="one">3/28</option>
+        <label for="option three" class="hidden">3/28</label>
+      </select>
+      <input class="cvc" type="text" placeholder="CVC">
+    </div>
+
+  <a href="success.html"><button class="pay">Pay</button></a>
+</div>
+</div>
+
+
+
+<div class="additional">
+
+  <h5>Others also bought</h5>
+
+      <img src="./assets/images/games/cyberpunk.jpg" class="bought-games" alt="Cyberpunk game">
+      <p>Cyberpunk</p>
+
+      <img src="./assets/images/games/furious.jpg" alt="Furious game" class="bought-games">
+      <p>Furious</p>
+      
+      
+      <div class="more-games-payment">
+        <div class="more">More games</div>
+        <img src="./assets/images/icons/plus-solid.svg" class="more-plus-payment" alt="plus icon">
+      </div>
+
+    </div>
+    </div>
+
+
+    <div class="gray-line footer-product-page"></div>
+    <footer>
+      <img src="./assets/images/icons/logo.png" class="footer-logo" alt="logo">
+    
+    
+      <div class="footer-desktop footer-payment">
+        <div class="footer">  
+          
+      <img src="./assets/images/icons/logo.png" class="logo-footer" alt="epic games logo">
+          
+          <div class="support">
+            <h6 class="h-six">SUPPORT</h6>
+            <a href="contact.html">Contact us</a>
+            <a href="contact.html">Support Center</a>
+            <a href="contact.html">Submit your game</a>
+          </div>
+      
+          <div class="about-footer">
+            <h6 class="h-six">ABOUT GAMEHUB</h6>
+            <a href="about.html">About us</a>
+            <a href="about.html">Terms of use</a>
+            <a href="about.html">Privacy Policy</a>
+          </div>
+          
+          <div class="profile">
+            <h6 class="h-six">MY PROFILE</h6>
+            <a href="construction.html">Edit profile</a>
+            <a href="construction.html">Subscription</a>
+            <a href="construction.html">Delete profile</a>
+          </div>
+          
+          <div class="share">
+            <h6 class="h-six">SHARE GAMEHUB</h6>
+            <div class="some">
+              <img src="./assets/images/icons/instagram.svg" class="insta" alt="instagram logo">
+              <img src="./assets/images/icons/square-facebook.svg" class="face" alt="facebook logo">
+              <img src="./assets/images/icons/twitter.svg" class="twitter" alt="twitter logo">
+            </div>
+          </div>
+        
+          <div class="payment-options">
+            <img src="./assets/images/cards/cc-visa.svg" class="visa" alt="visa card">
+            <img src="./assets/images/cards/cc-paypal.svg" class="paypal" alt="paypal card">
+            <img src="./assets/images/cards/cc-mastercard.svg" class="mastercard" alt="mastercard card">
+            <img src="./assets/images/cards/cc-apple-pay.svg" class="apple-pay" alt="apple pay card">
+          </div>
+      </div>  
+      </div>
+    
+    
+    </footer>
+</main>
+</body>
+</html>
