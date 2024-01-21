@@ -665,8 +665,8 @@ h4 {
 /* games page */
 
 .all-games{
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 /*item page*/
@@ -1311,4 +1311,21 @@ button.add{
 
 .space{
   margin-bottom: 500px;
+}
+
+
+@media (min-width: 480px){
+  .all-games{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 670px){
+  .all-games{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
