@@ -1,34 +1,69 @@
-[![Open in Visual Studio Code](https://classroom.github.com/assets/open-in-vscode-718a45dd9cf7e7f842a935f5ebbe5719a5e09af4491e668f4dbf3b35d5cca122.svg)](https://classroom.github.com/online_ide?assignment_repo_id=13043781&assignment_repo_type=AssignmentRepo)
 # HTML & CSS Course Assignment
 
-## Brief
+## Overview
 
-You must deliver a properly functioning, responsive website for the assignment brief you chose in Design 1.
+This project was completed as part of the HTML & CSS module for the Frontend Development course at Noroff. The objective was to create a fully functional, responsive website that adheres to the best practices of HTML and CSS. The project follows the design brief selected from **Design 1**, and the website meets all the specified requirements in terms of structure, design, and accessibility.
 
-The site needs to have every page listed in the site architecture on your chosen brief. Certain functionality requiring JavaScript can be mimicked; for example, a login page could link across from the ‘Sign in’ button.
+## Project Goals
 
-- The HTML should be semantic and neat.
-- The CSS should follow the DRY principle and be easy to read.
-- The website should be responsive and look good at every screen size with no horizontal scrollbars. Use Flexbox and CSS Grids where appropriate. Please do not use a CSS framework like Bootstrap; we want to see that you can build responsive sites without the help of a framework.
-- The site should be WCAG compliant, and accessibility should be taken into account.
-- Each page should have a unique <meta name="description">, <title>, and <h1>.
-- You should not use copied code in your submission. All code submitted must be written by yourself. You may use external sources to show you how to achieve specific effects, which should be included in your report.
+The main goal of this assignment was to apply everything learned in the course about HTML and CSS to build a responsive website. The website includes:
 
-## Process
+- Semantic, valid, and well-formatted HTML
+- CSS adhering to the **DRY** (Don't Repeat Yourself) principle
+- Responsiveness using Flexbox and CSS Grid (without frameworks like Bootstrap)
+- Accessibility considerations following **WCAG** guidelines
+- A unique `<meta name="description">`, `<title>`, and `<h1>` for each page
 
-1. Look at your prototype and consider how the elements will move across the different devices. Which elements move where on different devices?
-2. Write your HTML and CSS, ensuring your HTML is semantic and bug-free and your CSS follows DRY principles.
-3. Use media queries, flex or grid to make your website responsive across screen sizes.
-4. Test your website using your developer tools and also test on major browsers and various devices.
-5. Validate your code using the Markup Validation Service
-6. Use the WAVE Web Accessibility Evaluation Tools to test that your site matches best practices for accessibility
-7. When your site is ready, post it on the Teams peer review channel.
-8. Look at the work of your peers and write a review for them.
-9. Make adjustments based on the feedback you gather from peers and teachers.
-10. Submit here on Teams.
+## Features
 
-## Delivery
+- **Responsive Design**: The website adapts to various screen sizes without horizontal scrollbars.
+- **Semantic HTML**: The code follows HTML5 semantic guidelines for structure and clarity.
+- **CSS Flexbox and Grid**: Layouts were created using Flexbox and CSS Grid to ensure flexibility and responsiveness.
+- **Accessibility**: The website is designed to meet WCAG standards, with accessibility tools like WAVE used to evaluate the site.
+- **Unique Metadata**: Each page has unique metadata, including descriptions and titles.
+  
+## Pages and Structure
 
-- Please include a link to your live site, deployed on Netlify or GitHub Pages in your submission.
-- Please include a link to your public GitHub repo containing your code in your submission.
-- There is no reflection for this CA.
+The site includes several pages based on the architecture defined in the design brief. Some of the key pages include:
+
+- **Home Page**: Introduces the website's purpose.
+- **About Page**: Information about the project or business.
+- **Contact Page**: A form to allow visitors to get in touch.
+- **Additional Pages**: Depending on the brief, more pages may have been created, including product pages, service listings, etc.
+
+## Technologies Used
+
+- **HTML5**: For structuring the website content.
+- **CSS3**: For styling, layout (Flexbox & Grid), and responsiveness.
+- **GitHub Pages**: Used to host the website live.
+
+## Accessibility Considerations
+
+- **WCAG Compliance**: Efforts were made to ensure the site is accessible to all users. This includes:
+  - Ensuring sufficient color contrast.
+  - Using semantic HTML tags.
+  - Adding alternative text for images.
+  - Testing the site with accessibility tools such as WAVE.
+  
+## Project Setup
+
+To set up this project locally:
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/hvemily/html-css-course-assignment-hvemily.git
+2. Open the project folder in your preferred code editor.
+
+3. Open the index.html file in a browser to view the site locally.
+
+## Live Demo
+The website is live on GitHub Pages. You can view it here: Live Website
+
+## GitHub Repository: Repository Link
+https://github.com/NoroffFEU/html-css-course-assignment-hvemily?classId=ef3a73db-bfdb-43a2-b6fb-132244cde312&assignmentId=e2c36a2c-8fd8-4cc7-aa15-a43c28334c35&submissionId=9303764a-e912-ccf8-dba4-d634c4cbaa39
+
+## Live GitHub Pages Link: Live Page Link
+https://norofffeu.github.io/html-css-course-assignment-hvemily/
+
+##License
+This project is licensed under the Noroff license.
