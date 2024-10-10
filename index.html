@@ -3,13 +3,164 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Example Title, replace me!</title>
-  <link rel="stylesheet" href="src/css/styles.css">
+  <meta name="description" content="GameHub ⏐ Home">
+  <meta property="og:image" content="./assets/images/icons/logo.png" />
+  <title>GameHub ⏐ Home</title>
+  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
+  <link rel="stylesheet" href="./src/css/styles.css">
 </head>
-<body class="centered">
-  <div>
-    <img src="/assets/images/noroff-logo.png" alt="Noroff Logo">
-    <h1>Hello World!</h1>
-  </div>
+<body>
+  <header>
+    <nav class="nav-grid">
+      <img class="logo" src="./assets/images/icons/logo.png" alt="gamehub logo"> <label for="hamburger-ham"><img class="burger" src="./assets/images/icons/bars-solid.svg" alt="hamburger menu"></label> <input id="hamburger-ham" name="hamburger-ham" type="checkbox">
+      <div class="hidden-burger">
+        <div class="top-buttons">
+          <a href="games.html">SHOP</a> <a href="construction.html">SELL</a> <a href="about.html">ABOUT</a> <a href="contact.html">CONTACT</a>
+        </div>
+        <div class="bottom-buttons">
+          <a href="construction.html">LOGIN</a> <a href="construction.html">MY PROFILE</a>
+        </div>
+      </div>
+    </nav>
+    <div class="desktop-header">
+      <div>
+        <a href="index.html"><img src="./assets/images/icons/logo.png" class="desktop-logo" alt="desktop logo"></a>
+      </div>
+      <nav class="nav-header">
+        <ul>
+          <li>
+            <a href="games.html">SHOP</a>
+          </li>
+          <li>
+            <a href="construction.html">SELL</a>
+          </li>
+          <li>
+            <a href="about.html">ABOUT</a>
+          </li>
+          <li>
+            <a href="contact.html">CONTACT</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="logincart">
+        <p><a href="construction.html">LOGIN</a></p>
+        <p><a href="construction.html">CART (0)</a></p>
+      </div>
+    </div>
+    <div class="search-container"><label for="searchbox" class="hidden">Search games..</label> <input class="searchbox" placeholder="Search games.."> <img src="./assets/images/icons/magni.svg" alt="magnifying glass" class="magni"></div>
+  </header>
+  <main>
+    <section class="intro">
+      <div class="header-gray-line"></div>
+      <h1 class="blackfriday">NEW YEAR SALE! 30-50% OFF</h1>
+      <div class="top-pink-line"></div>
+      <div class="gamehub-platform">
+        <p class="pitch">The ultimate platform for buying and selling games. Dive into a universe filled with exciting adventure and level up your A-game!</p>
+        <div class="browse-sell">
+          <a href="games.html"><button class="browse">BROWSE GAMES</button></a> <a href="construction.html"><button class="sell">SELL GAMES</button></a>
+        </div>
+        <div class="top-pink-line"></div>
+      </div>
+    </section>
+    <section class="new">
+      <div class="new-games">
+        <div class="new-text">
+          <h2 class="whatsnew">What's new?</h2>
+          <p class="releases">QuantumForge games just released not one, but TWO fresh and epic games waiting to have their turn. Check them out!</p>
+        </div>
+        <div class="new-releases">
+          <div class="card-new">
+            <a href="item.html"><img src="assets/images/games/boxer.jpg" alt="boxer game" class="new-game-image"></a>
+            <div class="new-row">
+              <p>Boxer (2023)</p>
+              <p class="in-price">69$</p>
+            </div>
+            <div class="member-new">
+              <p>(10% membership discount!)</p>
+            </div>
+          </div>
+          <div class="card-new">
+            <a href="construction.html"><img src="assets/images/games/furious.jpg" alt="furious game" class="new-game-image"></a>
+            <div class="new-row">
+              <p>Furious (2023)</p>
+              <p class="in-price">49$</p>
+            </div>
+            <div class="member-new">
+              <p>(10% membership discount!)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="gray-line"></div>
+    <section class="trending-games">
+      <h3 class="trending-header">TRENDING</h3>
+      <div class="trending-main">
+        <div class="card-info">
+          <a href="construction.html"><img src="assets/images/games/black.jpg" alt="black game" class="game-image"></a>
+          <div class="trending-row">
+            <p>Black</p>
+            <p class="red">30%</p>
+          </div>
+          <div class="trending-row">
+            <p>59$</p>
+            <p>42.25$</p>
+          </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="card-info">
+          <a href="construction.html"><img src="assets/images/games/spacewar.jpg" alt="spacewar game" class="game-image"></a>
+          <div class="trending-row">
+            <p>SpaceWar</p>
+            <p class="red">50%</p>
+          </div>
+          <div class="trending-row">
+            <p>49$</p>
+            <p>24.50$</p>
+          </div>
+        </div>
+        <div class="horizontal-line"></div>
+        <div class="card-info">
+          <a href="construction.html"><img src="assets/images/games/racing.jpg" alt="racing game" class="game-image"></a>
+          <div class="trending-row">
+            <p>Racing</p>
+            <p class="red">30%</p>
+          </div>
+          <div class="trending-row">
+            <p>49$</p>
+            <p>34.30$</p>
+          </div>
+        </div>
+      </div>
+      <div class="more-games">
+        <div class="more">
+          More games
+        </div><a href="games.html"><img src="./assets/images/icons/plus-solid.svg" class="more-plus" alt="more games"></a>
+      </div>
+    </section>
+  </main>
+  <div class="gray-line"></div>
+  <footer>
+    <img src="./assets/images/icons/logo.png" class="footer-logo" alt="footer logo">
+    <div class="footer-desktop">
+      <div class="footer">
+        <img src="./assets/images/icons/logo.png" class="logo-footer" alt="epic games logo">
+        <div class="support">
+          <h6 class="h-six">SUPPORT</h6><a href="contact.html">Contact us</a> <a href="contact.html">Support Center</a> <a href="contact.html">Submit your game</a>
+        </div>
+        <div class="about-footer">
+          <h6 class="h-six">ABOUT GAMEHUB</h6><a href="about.html">About us</a> <a href="about.html">Terms of use</a> <a href="about.html">Privacy Policy</a>
+        </div>
+        <div class="profile">
+          <h6 class="h-six">MY PROFILE</h6><a href="construction.html">Edit profile</a> <a href="construction.html">Subscription</a> <a href="construction.html">Delete profile</a>
+        </div>
+        <div class="share">
+          <h6 class="h-six">SHARE GAMEHUB</h6>
+          <div class="some"><img src="./assets/images/icons/instagram.svg" class="insta" alt="epic games logo"> <img src="./assets/images/icons/square-facebook.svg" class="face" alt="epic games logo"> <img src="./assets/images/icons/twitter.svg" class="twitter" alt="epic games logo"></div>
+        </div>
+        <div class="payment-options"><img src="./assets/images/cards/cc-visa.svg" alt="visa card" class="visa"> <img src="./assets/images/cards/cc-paypal.svg" alt="paypal card" class="paypal"> <img src="./assets/images/cards/cc-mastercard.svg" alt="mastercard card" class="mastercard"> <img src="./assets/images/cards/cc-apple-pay.svg" alt="apple pay" class="apple-pay"></div>
+      </div>
+    </div>
+  </footer>
 </body>
 </html>
